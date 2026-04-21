@@ -5,7 +5,7 @@ import './Navbar.css'
 const NAV_LINKS = [
   { to: '/',          label: 'Home'    },
   { to: '/huskyexpo', label: 'HuskyX'  },
-  { to: '/news',      label: 'News'    },
+  // { to: '/news',      label: 'News'    },  // hidden, reserved for future version
   { to: '/events',    label: 'Events'  },
   { to: '/team',      label: 'Team'    },
 ]

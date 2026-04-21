@@ -1,6 +1,14 @@
 import PageHero from '../components/PageHero'
 import CommunityBanner from '../components/CommunityBanner'
+import Carousel from '../components/Carousel'
+import FadeIn from '../components/FadeIn'
 import './Events.css'
+
+const POKESWAP_IMAGES = [
+  './WGA/Pokeswap/pokeswap.png',
+  './WGA/Pokeswap/pokeswap2.png',
+  './WGA/Pokeswap/pokeswap3.png',
+]
 
 const EVENTS = [
   {
@@ -12,7 +20,7 @@ const EVENTS = [
       'at Pokeswap. Our Marketplace provides a space to connect with other fans, exchange cards, and ' +
       'build your ultimate deck. Whether you\'re hunting for rare finds or looking to trade duplicates, ' +
       'our community makes it easy, fun, and secure to play your way.',
-    image: './WGA/HuskyExpo/Artist Alley/image 1.JPG',
+    images: POKESWAP_IMAGES,
     imageLeft: true,
   },
   {
@@ -47,13 +55,16 @@ export default function Events() {
 
       <div className="events-content">
         {EVENTS.map(ev => (
-          <section
+          <FadeIn
+            as="section"
             key={ev.id}
             className={`ev-feature${ev.imageLeft ? '' : ' ev-feature--flip'}`}
           >
             <div className="ev-feature__inner">
               <div className="ev-feature__media">
-                <img src={ev.image} alt={ev.title} />
+                {ev.images
+                  ? <Carousel images={ev.images} />
+                  : <img src={ev.image} alt={ev.title} />}
               </div>
               <div className="ev-feature__text">
                 <h2>{ev.title}</h2>
@@ -61,7 +72,7 @@ export default function Events() {
                 <p>{ev.description}</p>
               </div>
             </div>
-          </section>
+          </FadeIn>
         ))}
       </div>
 

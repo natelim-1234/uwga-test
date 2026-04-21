@@ -5,7 +5,7 @@ import './Team.css'
 const MEMBERS = [
   { role: 'Club President',        name: 'Alexander Vuu', image: './WGA/HX_Team/Hoc.png'      },
   { role: 'Head of Strategic',     name: 'Jessica Low',   image: './WGA/HX_Team/jess.png'      },
-  { role: 'Social Media Manager',  name: 'Anna Wong',     image: './WGA/HX_Team/AnnaWong.jpg'  },
+  { role: 'Social Media Manager',  name: 'Annelia Wong',     image: './WGA/HX_Team/AnnaWong.jpg'  },
   { role: 'Talent Coordinator',    name: 'Andy Hank',     image: './WGA/HX_Team/andy.png'      },
 ]
 

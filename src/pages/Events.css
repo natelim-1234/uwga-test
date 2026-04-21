@@ -12,11 +12,13 @@
 .ev-feature--flip .ev-feature__inner { flex-direction: row-reverse; }
 
 .ev-feature__media { flex: 1; }
-.ev-feature__media img {
+.ev-feature__media img,
+.ev-feature__media .carousel__img {
   width: 100%;
   border-radius: 8px;
   object-fit: cover;
-  max-height: 400px;
+  object-position: top;
+  height: 500px;
   display: block;
 }
 .ev-feature__text { flex: 1; }

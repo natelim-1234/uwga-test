@@ -61,13 +61,13 @@ export default function Home() {
           </div>
           <div className="home-hero__buttons">
             <Link to="/huskyexpo" className="btn btn--primary">Join the Expo</Link>
-            <Link to="/huskyexpo" className="btn btn--secondary">Learn More About Us →</Link>
+            <Link to="/events" className="btn btn--secondary">See more events →</Link>
           </div>
         </div>
       </section>
 
-      {/* ── News & Updates ── */}
-      <section className="home-news">
+      {/* ── News & Updates (hidden, reserved for future version) ── */}
+      {false && <section className="home-news">
         <FadeIn as="div" className="home-news__inner">
           <div className="home-news__header">
             <h2>News &amp; Updates</h2>
@@ -78,7 +78,9 @@ export default function Home() {
           </div>
         </FadeIn>
         <CommunityBanner />
-      </section>
+      </section>}
+
+      <CommunityBanner />
 
       {/* ── Husky Expo split ── */}
       <section className="home-husky" style={sakuraBg}>
@@ -102,7 +104,7 @@ export default function Home() {
       <section className="home-schedule" style={{ backgroundImage: `url('${BASE}WGA/base/schedule-bg.png')` }}>
         <FadeIn as="div" className="home-schedule__inner">
           <h2>HuskyX Schedule</h2>
-          <img src="./WGA/base/Schedule.webp" alt="HuskyX Schedule" />
+          <img src="./WGA/base/Schedule.png" alt="HuskyX Schedule" />
         </FadeIn>
       </section>
 
