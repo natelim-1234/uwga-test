@@ -1,6 +1,6 @@
 .events-content { background: #FFEBF3; }
 
-.ev-feature { border-bottom: 1px solid rgba(214,31,89,0.1); }
+.ev-feature {}
 .ev-feature__inner {
   max-width: 1920px;
   margin: 0 auto;
